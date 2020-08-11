@@ -60,7 +60,7 @@ cd "${root_dir}" && git pull
 # install docker first
 if [[ ! $(command -v docker) ]]; then
     echo "install docker 。。。。。"
-    bash <(curl -s -L get.docker.com)
+    bash curl -s -L get.docker.com
     service docker restart
 fi
 
